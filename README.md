@@ -1,6 +1,12 @@
 # Load environment variables from .env
 
-## How to use:
+## Installation:
+
+```
+go get github.com/prongbang/goenv
+```
+
+## Usage:
 
 ### `.env` file
 ```
