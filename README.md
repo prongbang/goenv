@@ -30,3 +30,28 @@ func main() {
 	fmt.Println("pass:", pass)
 }
 ```
+
+### Get ENV from file
+
+.testenv
+
+```
+DB_USER=root
+DB_PASS=1234
+```
+
+Used
+
+```golang
+import (
+	"fmt"
+	"os"
+	"github.com/prongbang/goenv"
+)
+
+func main() {
+	err := goenv.LoadEnv(".testenv")
+	dbUser := os.Getenv("DB_USER")
+	dbPass := os.Getenv("DB_PASS")
+}
+```
