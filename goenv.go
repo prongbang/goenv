@@ -8,6 +8,7 @@ import (
 	"strings"
 )
 
+// Env is the map
 type Env map[string]string
 
 func init() {
@@ -16,6 +17,7 @@ func init() {
 	}
 }
 
+// LoadEnv is the function load .env file
 func LoadEnv(filename ...string) error {
 	if len(filename) == 0 {
 		filename = []string{".env"}
@@ -36,6 +38,7 @@ func LoadEnv(filename ...string) error {
 	return nil
 }
 
+// Setenv is the function set key:value ton environment
 func Setenv(key string, val string) {
 	os.Setenv(key, val)
 }
