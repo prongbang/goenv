@@ -2,7 +2,7 @@
 
 [![Build Status](http://img.shields.io/travis/prongbang/goenv.svg)](https://travis-ci.org/prongbang/goenv)
 [![Codecov](https://img.shields.io/codecov/c/github/prongbang/goenv.svg)](https://codecov.io/gh/prongbang/goenv)
-
+[![Go Report Card](https://goreportcard.com/badge/github.com/prongbang/goenv)](https://goreportcard.com/report/github.com/prongbang/goenv)
 
 ## Installation:
 
