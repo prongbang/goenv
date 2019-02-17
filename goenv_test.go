@@ -34,3 +34,11 @@ func TestLoadEnvByFile(t *testing.T) {
 		t.Error("Read .testenv file wrong.")
 	}
 }
+
+func TestLoadEnvByFileNotFound(t *testing.T) {
+	err := goenv.LoadEnv("7777")
+
+	if err == nil {
+		t.Error("Read 7777 file.")
+	}
+}

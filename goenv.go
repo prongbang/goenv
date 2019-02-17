@@ -2,7 +2,6 @@ package goenv
 
 import (
 	"bufio"
-	"fmt"
 	"io"
 	"os"
 	"strings"
@@ -12,9 +11,7 @@ import (
 type Env map[string]string
 
 func init() {
-	if err := LoadEnv(); err != nil {
-		fmt.Errorf("%v", err)
-	}
+	LoadEnv()
 }
 
 // LoadEnv is the function load .env file

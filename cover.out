@@ -1,0 +1,16 @@
+mode: set
+github.com/prongbang/goenv/goenv.go:13.13,15.2 1 1
+github.com/prongbang/goenv/goenv.go:18.40,19.24 1 1
+github.com/prongbang/goenv/goenv.go:23.2,23.32 1 1
+github.com/prongbang/goenv/goenv.go:35.2,35.12 1 1
+github.com/prongbang/goenv/goenv.go:19.24,21.3 1 1
+github.com/prongbang/goenv/goenv.go:23.32,25.15 2 1
+github.com/prongbang/goenv/goenv.go:28.3,31.29 3 1
+github.com/prongbang/goenv/goenv.go:25.15,27.4 1 1
+github.com/prongbang/goenv/goenv.go:31.29,33.4 1 1
+github.com/prongbang/goenv/goenv.go:39.37,41.2 1 1
+github.com/prongbang/goenv/goenv.go:43.29,47.21 3 1
+github.com/prongbang/goenv/goenv.go:59.2,59.12 1 1
+github.com/prongbang/goenv/goenv.go:47.21,49.34 2 1
+github.com/prongbang/goenv/goenv.go:49.34,51.24 2 1
+github.com/prongbang/goenv/goenv.go:51.24,55.5 3 1
