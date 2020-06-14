@@ -21,6 +21,19 @@ func TestLoadEnvDefault(t *testing.T) {
 	}
 }
 
+func TestLoadEnvBasicAuthen(t *testing.T) {
+	err := goenv.LoadEnv()
+	basic := os.Getenv("BASIC_AUTHORIZATION")
+
+	if err != nil {
+		t.Error("Read .env file wrong.")
+	}
+
+	if basic != "Basic dXNlcjpwYXNz==" {
+		t.Error("Read .env file wrong.")
+	}
+}
+
 func TestLoadEnvByFile(t *testing.T) {
 	err := goenv.LoadEnv(".testenv")
 	dbUser := os.Getenv("DB_USER")

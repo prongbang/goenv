@@ -117,10 +117,10 @@ func parse(r io.Reader) Env <span class="cov8" title="1">{
         for scanner.Scan() </span><span class="cov8" title="1">{
                 text := scanner.Text()
                 if strings.Contains(text, "=") </span><span class="cov8" title="1">{
-                        keyVal := strings.Split(text, "=")
-                        if len(keyVal) &gt;= 2 </span><span class="cov8" title="1">{
-                                key := keyVal[0]
-                                val := keyVal[1]
+                        i := strings.Index(text, "=")
+                        if i &gt; -1 </span><span class="cov8" title="1">{
+                                key := text[:i]
+                                val := text[i+1:]
                                 env[key] = val
                         }</span>
                 }

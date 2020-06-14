@@ -47,10 +47,10 @@ func parse(r io.Reader) Env {
 	for scanner.Scan() {
 		text := scanner.Text()
 		if strings.Contains(text, "=") {
-			keyVal := strings.Split(text, "=")
-			if len(keyVal) >= 2 {
-				key := keyVal[0]
-				val := keyVal[1]
+			i := strings.Index(text, "=")
+			if i > -1 {
+				key := text[:i]
+				val := text[i+1:]
 				env[key] = val
 			}
 		}
